@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+ <div id="nav">
+   <div class="content">
+          <ul>
+            <li><%= link_to "Welcome", welcome_path %></li>
+            <li><%= link_to "Project", portfolio_path %></li>
+               <li><a href="">About</a></li>
+               <li><a href="">Contact</a></li>
+          </ul>
+   </div>
+</div>
+  <div class="content" style="height:50px">
+  </div>
+<div class="wrapper">
+<%= yield %>
+
+<div class="myfooter">
+  <div class="content">
+     <div class="section group">
+        <div class="col span_1_of_3">
+          <div style="border-bottom: 1px solid rgb(37,99,171)"><h4>Contact Me</h4></div><br/>
+          <a href="mailto: shiqian.wei@gmail.com"><i class="fa fa-envelope-o fa-2x"></i> <span> - shiqian.wei at gmail.com</span></a><br/>
+          <a href="https://www.linkedin.com/in/shiqianwei"><i class="fa fa-linkedin-square fa-2x"></i></a>
+          <a href="https://github.com/shiqianwei"><i class="fa fa-github-square fa-2x"></i></a>
+        </div>
+    </div>
+  </div> 
+</div>
+  </div>
+</body>
+</html>

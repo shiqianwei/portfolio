@@ -1,0 +1,143 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#nav{
+   position:fixed;
+   width:100%;
+   display:block;
+   background-color:#f1f1f1;
+   z-index:1;
+   text-align:center;
+}
+.light-grey{
+   background-color:#f1f1f1;
+}
+.wrapper{
+   width:100%;
+   position:relative;
+}
+.maincontent{
+   display:block;
+   width:100%;
+}
+
+.content{
+   width: 80%;
+   margin: 0 auto;
+   position: relative;
+  
+}
+
+.myfooter{
+   clear: both;
+   width:100%;
+   background-color:#d8d9d9;
+   display:relative;
+   color: rgb(37,99,171);
+}
+
+div p{
+    font-family:'Oxygen', sans-serif;
+}
+
+div img{
+    width:100%;
+}
+
+
+#nav ul li{
+   display: inline-block;
+   text-decoration:none;
+   font-size:15px;
+   font-weight:bold;
+   padding: 15px 10px 5px 10px;
+}
+
+#nav li a{
+    text-decoration:none;
+}
+
+#nav li a:hover{
+    text-decoration:none;
+}
+#nav li:hover{
+    text-decoration:none;
+    border-bottom: 2px solid orange;
+    padding-bottom: 3px;
+}
+
+.section-title{
+    text-align: center;
+    color: rgb(25,48,70);
+}
+.section-subtitle{
+    padding-top:10px;
+    font-size: 22px;
+    line-height:25px;
+    text-align: center;
+    color: rgb(25,48,70)
+}
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+.inside-pad{
+  padding:5px 5px 5px 5px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+.span_3_of_3 {
+	width: 100%; 
+}
+
+.span_2_of_3 {
+	width: 66.13%; 
+}
+
+.span_1_of_3 {
+	width: 32.26%; 
+}
+.span_1_of_3:hover {
+  opacity:0.9;
+  
+}
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+}

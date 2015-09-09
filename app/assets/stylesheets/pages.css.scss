@@ -1,0 +1,39 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#tagline{
+    display:block;
+    width:100%;
+    background-image: url("https://photos-6.dropbox.com/t/2/AAAGlsGZmrVqL6Ix0NC6nEGc6K55P7TtQ0QtJas-_EYolA/12/109162459/png/32x32/1/1441166400/0/2/Screen%20Shot%202015-09-01%20at%206.18.57%20PM.png/CNvfhjQgASACIAMgBCAFIAYgBygBKAIoBw/YiSkwOR5UTEOUr4d6-GWwUvqF0f51x6fHMgIsqSbiMo%2Cq1vCHZ-Jj_qJBfzecWBMfV21XNhZKhdTg0bWBjt9nlY?size=1024x768&size_mode=2");
+    background-size: cover;
+    height:550px;
+}
+
+.slogan{
+   font-size: 50px;
+   color: white;
+   margin: 0 auto;
+   text-align: center;
+   padding-top:150px;
+   padding-bottom:70px;
+}
+
+.action-button{
+   margin: auto;
+   text-align: center;
+}
+
+.action-button a{
+   text-decoration:none;
+   font-weight: bold;
+   background-color:orange;
+   padding:15px 15px 15px 15px;
+   color:white;
+}
+.action-button a:hover{
+   background-color:#e68c00;
+}
+
+
+
